@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('ist step clone') {
             steps {
-                git 'https://github.com/prajnajain/helloworld_latest.git'
+                git branch: 'main', url: 'https://github.com/prajnajain/helloworld_latest.git'
             }
         }
         stage('2nd step build') {
